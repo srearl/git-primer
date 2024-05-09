@@ -1,7 +1,85 @@
 ---
-title: "git_primer"
-format: revealjs
+format:
+  revealjs: 
+    theme:
+    - dark
+    - custom.scss
 ---
+
+::: custom_title
+
+version control with git <span style="color:#f34c26">{{< fa brands git-alt size=1x >}}</span> and GitHub <span style="color:#74C0FC">{{< fa brands github size=1x >}}</span>
+
+:::
+
+```{mermaid}
+%%| label: opening-slide
+%%| fig-width: 10000000
+%%{init: { 'logLevel': 'debug', 'theme': 'dark' , 'themeVariables': {
+'commitLabelFontSize': '16px'
+} } }%%
+gitGraph
+  commit id: "initialize"
+  commit id: "add README"
+  commit id: "add model"
+  branch microbial
+  checkout microbial
+  commit id: "microbial params"
+  branch chemistry
+  checkout chemistry
+  commit id: "chemistry params"
+  checkout microbial
+  merge chemistry
+  checkout main
+  merge microbial
+  commit id: "one-pool model"
+```
+
+
+##  {#what_is_it data-menu-title="what is it"}
+
+
+**what it is:**
+
+  * an [open-source]{style="color: yellow;"}, [distributed]{style="color: yellow;"} version control system designed for [speed and efficiency]{style="color: yellow;"}[^1]
+
+<br>
+
+**what it does:**
+
+  * watches repositories (like a directory) for changes
+  
+  * asks that you describe changes when they are made
+  
+  * identifies conflicts, and forces you to resolve them
+
+
+[^1]: [introduction-to-git](https://speakerdeck.com/schacon/introduction-to-git?slide=13)
+
+
+## {#git_github data-menu-title="github is not git" .center}
+
+:::{.r-stack}
+
+<span style="color:#f34c26">{{< fa brands git-alt size=5x >}}</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="font-size:100px;">!=</span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<span style="color:#74C0FC">{{< fa brands github size=5x >}}</span>
+
+:::
+
+
+## {#not_just_github data-menu-title="not just github" .center}
+
+:::{.r-stack}
+
+<span style="color:#f34c26">{{< fa brands gitlab size=5x >}}</span>
+<span style="color:#74C0FC">{{< fa brands github size=5x >}}</span>
+<span style="color:#1d78f3">{{< fa brands bitbucket size=5x >}}</span>
+
+:::
+
 
 ## Quarto
 

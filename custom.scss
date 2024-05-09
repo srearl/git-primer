@@ -1,0 +1,66 @@
+/*-- scss:defaults --*/
+
+$link-color: #654ff0;
+$code-color: #7a4aa6;
+
+/*-- scss:rules --*/
+
+.custom_title{
+  max-width: 70%;
+  font-size: 1.6em;
+  margin-bottom: 1.0em;
+}
+
+.center_xy {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+// none of the approaches to making the mermaid diagram larger were successful
+
+.mermaid svg { 
+  max-width: 100%; 
+  height: auto;
+}
+
+.this_mermaid{
+  width: 100%;
+  height: auto;
+}
+
+svg[id^="m"][width][height][viewBox] {
+    max-width: 95%;
+    max-height: 95%;
+}
+
+div.mermaid {
+    margin-left: 0 !important;
+    text-align: center;
+    resize:both;
+    overflow:auto;
+    margin-bottom: 2px;
+    position:relative;
+    max-height: 600px;
+    max-width: 100%;
+}
+
+.mermaid svg {
+    max-width: 200% !important;
+    width: 200% !important;
+    height: auto;
+    transform: translate(calc(-0.25 * 100%), 0) !important;
+  }
+
+div.mermaid::after {
+    content:'';
+    display:block;
+    width:10px;
+    height:10px;
+    background-color:yellowgreen;
+    position:absolute;
+    right:0;
+    bottom:0;
+}
+

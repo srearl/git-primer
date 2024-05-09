@@ -7,7 +7,9 @@
 <link href="git_primer_files/libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="git_primer_files/libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="git_primer_files/libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
-<link href="git_primer_files/libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+<link href="git_primer_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="git_primer_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
+<link href="git_primer_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.4.550">
 
   <title>git_primer</title>
@@ -319,17 +321,73 @@
       margin-right: 0; 
     }
   </style>
+  <script src="git_primer_files/libs/quarto-diagram/mermaid.min.js"></script>
+  <script src="git_primer_files/libs/quarto-diagram/mermaid-init.js"></script>
+  <link href="git_primer_files/libs/quarto-diagram/mermaid.css" rel="stylesheet">
 </head>
-<body class="quarto-light">
+<body class="quarto-dark">
   <div class="reveal">
     <div class="slides">
 
-<section id="title-slide" class="quarto-title-block center">
-  <h1 class="title">git_primer</h1>
 
-<div class="quarto-title-authors">
+<section class="slide level2">
+
+<div class="custom_title">
+<p>version control with git <span style="color:#f34c26"><i class="fa-brands fa-git-alt fa-1x" aria-label="git-alt"></i></span> and GitHub <span style="color:#74C0FC"><i class="fa-brands fa-github fa-1x" aria-label="github"></i></span></p>
 </div>
-
+<div class="cell" data-reveal="true" data-fig-width="10000000" data-layout-align="default">
+<div class="cell-output-display">
+<div id="opening-slide">
+<div>
+<pre class="mermaid mermaid-js" data-label="opening-slide">%%{init: { 'logLevel': 'debug', 'theme': 'dark' , 'themeVariables': {
+'commitLabelFontSize': '16px'
+} } }%%
+gitGraph
+  commit id: "initialize"
+  commit id: "add README"
+  commit id: "add model"
+  branch microbial
+  checkout microbial
+  commit id: "microbial params"
+  branch chemistry
+  checkout chemistry
+  commit id: "chemistry params"
+  checkout microbial
+  merge chemistry
+  checkout main
+  merge microbial
+  commit id: "one-pool model"
+</pre>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="what_is_it" class="slide level2" data-menu-title="what is it">
+<h2></h2>
+<p><strong>what it is:</strong></p>
+<ul>
+<li>an <span style="color: yellow;">open-source</span>, <span style="color: yellow;">distributed</span> version control system designed for <span style="color: yellow;">speed and efficiency</span><sup>1</sup></li>
+</ul>
+<p><br></p>
+<p><strong>what it does:</strong></p>
+<ul>
+<li><p>watches repositories (like a directory) for changes</p></li>
+<li><p>asks that you describe changes when they are made</p></li>
+<li><p>identifies conflicts, and forces you to resolve them</p></li>
+</ul>
+<aside><ol class="aside-footnotes"><li id="fn1"><p><a href="https://speakerdeck.com/schacon/introduction-to-git?slide=13">introduction-to-git</a></p></li></ol></aside></section>
+<section id="git_github" class="slide level2 center" data-menu-title="github is not git">
+<h2></h2>
+<div class="r-stack">
+<p><span style="color:#f34c26"><i class="fa-brands fa-git-alt fa-5x" aria-label="git-alt"></i></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:100px;">!=</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#74C0FC"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span></p>
+</div>
+</section>
+<section id="not_just_github" class="slide level2 center" data-menu-title="not just github">
+<h2></h2>
+<div class="r-stack">
+<p><span style="color:#f34c26"><i class="fa-brands fa-gitlab fa-5x" aria-label="gitlab"></i></span> <span style="color:#f34c26"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span> <span style="color:#74C0FC"><i class="fa-brands fa-bitbucket fa-5x" aria-label="bitbucket"></i></span></p>
+</div>
 </section>
 <section id="quarto" class="slide level2">
 <h2>Quarto</h2>
@@ -357,6 +415,7 @@
 </div>
 </div>
 </section>
+
     </div>
   </div>
 
