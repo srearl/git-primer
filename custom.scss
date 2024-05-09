@@ -18,6 +18,14 @@ $code-color: #7a4aa6;
   left: 50%;
 }
 
+.left {
+  text-align: left;
+}
+
+.smaller_text {
+  font-size: 0.8em;
+}
+
 // none of the approaches to making the mermaid diagram larger were successful
 
 .mermaid svg { 

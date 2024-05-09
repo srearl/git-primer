@@ -10,7 +10,7 @@
 <link href="git_primer_files/libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <link href="git_primer_files/libs/quarto-contrib/fontawesome6-0.1.0/all.css" rel="stylesheet">
 <link href="git_primer_files/libs/quarto-contrib/fontawesome6-0.1.0/latex-fontsize.css" rel="stylesheet"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.4.550">
+  <meta name="generator" content="quarto-1.4.553">
 
   <title>git_primer</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -367,7 +367,7 @@ gitGraph
 <h2></h2>
 <p><strong>what it is:</strong></p>
 <ul>
-<li>an <span style="color: yellow;">open-source</span>, <span style="color: yellow;">distributed</span> version control system designed for <span style="color: yellow;">speed and efficiency</span><sup>1</sup></li>
+<li>an <span style="color:yellow;">open-source</span>, <span style="color:yellow;">distributed</span> version control system designed for <span style="color:yellow;">speed and efficiency</span><sup>1</sup></li>
 </ul>
 <p><br></p>
 <p><strong>what it does:</strong></p>
@@ -380,33 +380,72 @@ gitGraph
 <section id="git_github" class="slide level2 center" data-menu-title="github is not git">
 <h2></h2>
 <div class="r-stack">
-<p><span style="color:#f34c26"><i class="fa-brands fa-git-alt fa-5x" aria-label="git-alt"></i></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:100px;">!=</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#74C0FC"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span></p>
+<p><span style="color:#f34c26"><i class="fa-brands fa-git-alt fa-5x" aria-label="git-alt"></i></span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="font-size:2em;">!=</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span style="color:#74C0FC"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span></p>
+</div>
+<p><br></p>
+<div class="left">
+<div class="smaller_text">
+<ul>
+<li>Git: version control software used to track files in a directory (a repository)
+<ul>
+<li>Git creates the versioned history of a repository</li>
+</ul></li>
+<li>GitHub: website that allows users to store their Git repositories and share them with others (i.e., a graphical user interface)</li>
+</ul>
+</div>
 </div>
 </section>
 <section id="not_just_github" class="slide level2 center" data-menu-title="not just github">
 <h2></h2>
 <div class="r-stack">
-<p><span style="color:#f34c26"><i class="fa-brands fa-gitlab fa-5x" aria-label="gitlab"></i></span> <span style="color:#f34c26"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span> <span style="color:#74C0FC"><i class="fa-brands fa-bitbucket fa-5x" aria-label="bitbucket"></i></span></p>
+<p><span style="color:#f34c26"><i class="fa-brands fa-gitlab fa-5x" aria-label="gitlab"></i></span> <span style="color:#74C0FC"><i class="fa-brands fa-github fa-5x" aria-label="github"></i></span> <span style="color:#1d78f3"><i class="fa-brands fa-bitbucket fa-5x" aria-label="bitbucket"></i></span> <span style="font-size:1.6em;">self host</span></p>
 </div>
 </section>
-<section id="quarto" class="slide level2">
-<h2>Quarto</h2>
-<p>Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <a href="https://quarto.org/docs/presentations/" class="uri">https://quarto.org/docs/presentations/</a>.</p>
+<section id="git-organization" class="slide level2">
+<h2><span style="color:#f34c26">git</span> organization</h2>
+<div class="smaller_text">
+<p>the repository (think directory) is the fundamental organizational unit</p>
+</div>
+<div style="background:white; width:40%; display:block; margin-left:auto; margin-right:auto">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/organization_git.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
 </section>
-<section id="bullets" class="slide level2">
-<h2>Bullets</h2>
-<p>When you click the <strong>Render</strong> button a document will be generated that includes:</p>
+<section id="github-organization" class="slide level2">
+<h2><span style="color:#74C0FC">GitHub</span> organization</h2>
+<div style="font-size:0.6em;">
 <ul>
-<li>Content authored with markdown</li>
-<li>Output from executable code</li>
+<li>repositories can be <span style="color:yellow">public</span> (controlled write access) or <span style="color:yellow">private</span> (controlled read access)</li>
+<li>repository owner can provide write access to other accounts</li>
+<li><span style="color:yellow">organizations</span> can link many accounts
+<ul>
+<li>accounts within organizations can be organized into <span style="color:yellow">teams</span> for additional organization and access control</li>
+</ul></li>
 </ul>
+</div>
+<div style="background:white; width:80%; display:block; margin-left:auto; margin-right:auto">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/organization_github.png" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div>
 </section>
-<section id="code" class="slide level2">
-<h2>Code</h2>
-<p>When you click the <strong>Render</strong> button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:</p>
-<div class="cell">
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<section id="synchronization-collaboration-and-communication-with-github" class="slide level2 smaller">
+<h2>synchronization, collaboration, and communication with <span style="color:#74C0FC">GitHub</span></h2>
+<div style="background:white;">
+<div class="quarto-layout-panel" data-layout-ncol="2">
+<div class="quarto-layout-row">
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/git_team.png" style="width:80.0%"></p>
+</div>
+<div class="quarto-layout-cell" style="flex-basis: 50.0%;justify-content: center;">
+<p><img data-src="images/git_team_pull.png" style="width:90.0%"></p>
+</div>
+</div>
 </div>
 </div>
 <div class="quarto-auto-generated-content">
@@ -626,44 +665,6 @@ gitGraph
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {
@@ -740,6 +741,24 @@ gitGraph
         // clear code selection
         e.clearSelection();
       });
+        var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+        var mailtoRegex = new RegExp(/^mailto:/);
+          var filterRegex = new RegExp('/' + window.location.host + '/');
+        var isInternal = (href) => {
+            return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+        }
+        // Inspect non-navigation links and adorn them if external
+     	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+        for (var i=0; i<links.length; i++) {
+          const link = links[i];
+          if (!isInternal(link.href)) {
+            // undo the damage that might have been done by quarto-nav.js in the case of
+            // links that we want to consider external
+            if (link.dataset.originalHref !== undefined) {
+              link.href = link.dataset.originalHref;
+            }
+          }
+        }
       function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
         const config = {
           allowHTML: true,
@@ -776,7 +795,11 @@ gitGraph
           try { href = new URL(href).hash; } catch {}
           const id = href.replace(/^#\/?/, "");
           const note = window.document.getElementById(id);
-          return note.innerHTML;
+          if (note) {
+            return note.innerHTML;
+          } else {
+            return "";
+          }
         });
       }
       const findCites = (el) => {

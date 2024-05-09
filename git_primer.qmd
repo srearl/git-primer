@@ -41,7 +41,7 @@ gitGraph
 
 **what it is:**
 
-  * an [open-source]{style="color: yellow;"}, [distributed]{style="color: yellow;"} version control system designed for [speed and efficiency]{style="color: yellow;"}[^1]
+  * an [open-source]{style="color:yellow;"}, [distributed]{style="color:yellow;"} version control system designed for [speed and efficiency]{style="color:yellow;"}[^1]
 
 <br>
 
@@ -59,45 +59,73 @@ gitGraph
 
 ## {#git_github data-menu-title="github is not git" .center}
 
-:::{.r-stack}
+::: {.r-stack}
 
 <span style="color:#f34c26">{{< fa brands git-alt size=5x >}}</span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span style="font-size:100px;">!=</span>
+<span style="font-size:2em;">!=</span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <span style="color:#74C0FC">{{< fa brands github size=5x >}}</span>
+
+:::
+
+<br>
+
+::: left
+
+::: smaller_text
+
+- Git: version control software used to track files in a directory (a repository)
+  + Git creates the versioned history of a repository
+- GitHub: website that allows users to store their Git repositories and share them with others (i.e., a graphical user interface)
+
+:::
 
 :::
 
 
 ## {#not_just_github data-menu-title="not just github" .center}
 
-:::{.r-stack}
-
+::: {.r-stack}
 <span style="color:#f34c26">{{< fa brands gitlab size=5x >}}</span>
 <span style="color:#74C0FC">{{< fa brands github size=5x >}}</span>
 <span style="color:#1d78f3">{{< fa brands bitbucket size=5x >}}</span>
-
+[self host]{style="font-size:1.6em;"}
 :::
 
 
-## Quarto
+## [git]{style="color:#f34c26"} organization
 
-Quarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.
+::: smaller_text
+the repository (think directory) is the fundamental organizational unit
+:::
 
-## Bullets
+::: {style="background:white; width:40%; display:block; margin-left:auto; margin-right:auto"}
+![](images/organization_git.png){fig-align="center"}
+:::
 
-When you click the **Render** button a document will be generated that includes:
+## [GitHub]{style="color:#74C0FC"} organization
 
--   Content authored with markdown
--   Output from executable code
+::: {style="font-size:0.6em;"}
+* repositories can be [public]{style="color:yellow"} (controlled write access) or [private]{style="color:yellow"} (controlled read access)
+* repository owner can provide write access to other accounts
+* [organizations]{style="color:yellow"} can link many accounts
+  + accounts within organizations can be organized into [teams]{style="color:yellow"} for additional organization and access control
+:::
 
-## Code
-
-When you click the **Render** button a presentation will be generated that includes both content and the output of embedded code. You can embed code like this:
-
-```{r}
-1 + 1
-```
+::: {style="background:white; width:80%; display:block; margin-left:auto; margin-right:auto"}
+![](images/organization_github.png){fig-align="center"}
+:::
 
 
+## synchronization, collaboration, and communication with [GitHub]{style="color:#74C0FC"} {.smaller}
+
+::: {style="background:white;"}
+::: {layout-ncol=2}
+
+![](images/git_team.png){width=80%}
+
+![](images/git_team_pull.png){width=90%}
+
+::: 
+:::
