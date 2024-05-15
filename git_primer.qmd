@@ -7,9 +7,7 @@ format:
 ---
 
 ::: custom_title
-
 version control with git <span style="color:#f34c26">{{< fa brands git-alt size=1x >}}</span> and GitHub <span style="color:#74C0FC">{{< fa brands github size=1x >}}</span>
-
 :::
 
 ```{mermaid}
@@ -36,18 +34,14 @@ gitGraph
 ```
 
 
-## {#boykis_on_git data-menu-title="Vicky Boykis on Git"}
+## {#boykis_on_git data-menu-title="Vicky Boykis on Git" .center}
 
-::: {.r-stack}
-![](images/boykis_on_git.png)
-:::
+![](images/boykis_on_git.png){fig-align="center"}
 
 
 ## {#agenda data-menu-title="agenda"}
 
-::: smaller_text
 AGENDA
-:::
 
 ::: very_small_text
 
@@ -117,23 +111,12 @@ AGENDA
 
   * an [open-source]{style="color:yellow;"}, [distributed]{style="color:yellow;"} version control system designed for [speed and efficiency]{style="color:yellow;"}[^1]
 
-<br>
-
-**what it does:**
-
-  * watches repositories (like a directory) for changes
-  
-  * asks that you describe changes when they are made
-  
-  * identifies conflicts, and forces you to resolve them
-
-
 [^1]: [introduction-to-git](https://speakerdeck.com/schacon/introduction-to-git?slide=13)
 
 
-##  {#git_github data-menu-title="github is not git" .center}
+## {#git_github data-menu-title="github is not git" .center}
 
-::: {.r-stack}
+::: {style="text-align: center;"}
 
 <span style="color:#f34c26">{{< fa brands git-alt size=5x >}}</span>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -145,8 +128,6 @@ AGENDA
 
 <br>
 
-::: left
-
 ::: smaller_text
 
 - Git: version control software used to track files in a directory (a repository)
@@ -155,16 +136,16 @@ AGENDA
 
 :::
 
-:::
-
 
 ## {#not_just_github data-menu-title="not just github" .center}
 
-::: {.r-stack}
+::: {style="text-align: center;"}
+
 <span style="color:#f34c26">{{< fa brands gitlab size=5x >}}</span>
 <span style="color:#74C0FC">{{< fa brands github size=5x >}}</span>
 <span style="color:#1d78f3">{{< fa brands bitbucket size=5x >}}</span>
 [self host]{style="font-size:1.6em;"}
+
 :::
 
 
@@ -181,17 +162,17 @@ the repository (think directory) is the fundamental organizational unit
 
 ## {#agenda-coding data-menu-title="agenda-coding"}
 
-::: smaller_text
 AGENDA
-:::
 
 ::: very_small_text
 
-[workflows]{style="font-weight:bold; color:grey;"}
+::: {style="opacity:0.3;"}
 
-::: grey
+[workflows]{style="font-weight:bold; color:yellow;"}
+
 - <u>Describe</u> various coding workflows
 - <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
+
 :::
 
 [Git & GitHub]{style="font-weight:bold; color:yellow;"}
@@ -225,85 +206,7 @@ AGENDA
 
 ::::
 
-[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:grey;"}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-::: grey
-- <u>Describe</u> the causes of merge conflicts
-- <u>Explain</u> how to avoid merge conflicts
-:::
-:::
-
-::: {.column width="50%"}
-::: grey
-- <u>Summarise</u> what to do if a merge conflict occurs
-:::
-:::
-
-::::
-
-[project management: issues, projects, READMEs]{style="font-weight:bold; color:grey;"}
-
-[miscellaneous: data, best practices]{style="font-weight:bold; color:grey;"}
-
-:::
-
-
-## {#agenda-advanced data-menu-title="agenda-advanced"}
-
-::: smaller_text
-AGENDA
-:::
-
-::: very_small_text
-
-[workflows]{style="font-weight:bold; color:grey;"}
-
-::: grey
-- <u>Describe</u> various coding workflows
-- <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
-:::
-
-[Git & GitHub]{style="font-weight:bold; color:grey;"}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-::: grey
-- <u>Describe</u> the difference between Git and GitHub
-- <u>Navigate</u> GitHub via a web browser
-:::
-:::
-
-::: {.column width="50%"}
-::: grey
-- <u>Use</u> GitHub to create a new repository
-- <u>Edit</u> a new repository through GitHub's interface
-:::
-:::
-
-::::
-
-[RStudio (local <--> cloud)]{style="font-weight:bold; color:grey;"}
-
-:::: {.columns}
-
-::: {.column width="40%"}
-::: grey
-- <u>Describe</u> the computer-to-GitHub order of operations
-- <u>Define</u> fundamental Git vocabulary
-:::
-:::
-
-::: {.column width="50%"}
-::: grey
-- <u>Create</u> a local version-controlled repository that is connected to GitHub
-:::
-:::
-
-::::
+::: {style="opacity:0.3;"}
 
 [advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:yellow;"}
 
@@ -320,11 +223,87 @@ AGENDA
 
 ::::
 
-[project management: issues, projects, READMEs]{style="font-weight:bold; color:grey;"}
 
-[miscellaneous: data, best practices]{style="font-weight:bold; color:grey;"}
+[project management: issues, projects, READMEs]{style="font-weight:bold; color:yellow;"}
+
+[miscellaneous: data, best practices]{style="font-weight:bold; color:yellow;"}
 
 :::
+:::
+
+
+## {#agenda-advanced data-menu-title="agenda-advanced"}
+
+AGENDA
+
+::: very_small_text
+
+::: {style="opacity:0.3;"}
+
+[workflows]{style="font-weight:bold; color:yellow;"}
+
+- <u>Describe</u> various coding workflows
+- <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
+
+
+[Git & GitHub]{style="font-weight:bold; color:yellow;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- <u>Describe</u> the difference between Git and GitHub
+- <u>Navigate</u> GitHub via a web browser
+:::
+
+::: {.column width="50%"}
+- <u>Use</u> GitHub to create a new repository
+- <u>Edit</u> a new repository through GitHub's interface
+:::
+
+::::
+
+[RStudio (local <--> cloud)]{style="font-weight:bold; color:yellow;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- <u>Describe</u> the computer-to-GitHub order of operations
+- <u>Define</u> fundamental Git vocabulary
+:::
+
+::: {.column width="50%"}
+- <u>Create</u> a local version-controlled repository that is connected to GitHub
+:::
+
+::::
+
+:::
+
+[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:yellow;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- <u>Describe</u> the causes of merge conflicts
+- <u>Explain</u> how to avoid merge conflicts
+:::
+
+::: {.column width="50%"}
+- <u>Summarise</u> what to do if a merge conflict occurs
+:::
+
+::::
+
+::: {style="opacity:0.3;"}
+
+[project management: issues, projects, READMEs]{style="font-weight:bold; color:yellow;"}
+
+[miscellaneous: data, best practices]{style="font-weight:bold; color:yellow;"}
+
+:::
+:::
+:::
+
 
 ## [GitHub]{style="color:#74C0FC"} organization
 
@@ -340,18 +319,22 @@ AGENDA
 :::
 
 
-## workflows within groups {.smaller}
+## workflows: conflicts <i style=color:red; class="fa-solid fa-code-merge"></i>
 
-![](images/git_team.png){style="background:white;" width=80%; fig-align="center"}
+[workflows within groups]{style="color:yellow;"}
 
-
-## workflows: conflicts <i style=color:red; class="fa-solid fa-code-merge"></i> {.smaller}
-
-
-## workflows: branches <i style=color:blue; class="fa-solid fa-code-branch"></i> {.smaller}
+![](images/git_team.png){style="background:white;" width=50%; fig-align="center"}
 
 
-## workflows: forks <i style=color:grey; class="fa-solid fa-code-fork"></i> {.smaller}
+## workflows: branches <i style=color:blue; class="fa-solid fa-code-branch"></i>
+
+
+## workflows: forks <i style=color:grey; class="fa-solid fa-code-fork"></i>
+
+![](images/git_team.png){style="background:white;" width=50%; fig-align="center"}
+
+
+## workflows: forks <i style=color:grey; class="fa-solid fa-code-fork"></i>
 
 ::: {style="background:white;"}
 ::: {layout-ncol=3}
@@ -372,176 +355,163 @@ AGENDA
 
 ## {#agenda-project_management data-menu-title="agenda-project_management"}
 
-::: smaller_text
 AGENDA
-:::
 
 ::: very_small_text
 
-[workflows]{style="font-weight:bold; color:grey;"}
+::: {style="opacity:0.3;"}
 
-::: grey
+[workflows]{style="font-weight:bold; color:yellow;"}
+
 - <u>Describe</u> various coding workflows
 - <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
-:::
 
-[Git & GitHub]{style="font-weight:bold; color:grey;"}
+
+[Git & GitHub]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the difference between Git and GitHub
 - <u>Navigate</u> GitHub via a web browser
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Use</u> GitHub to create a new repository
 - <u>Edit</u> a new repository through GitHub's interface
 :::
-:::
 
 ::::
 
-[RStudio (local <--> cloud)]{style="font-weight:bold; color:grey;"}
+[RStudio (local <--> cloud)]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the computer-to-GitHub order of operations
 - <u>Define</u> fundamental Git vocabulary
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Create</u> a local version-controlled repository that is connected to GitHub
-:::
 :::
 
 ::::
 
-[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:grey;"}
+
+[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the causes of merge conflicts
 - <u>Explain</u> how to avoid merge conflicts
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Summarise</u> what to do if a merge conflict occurs
-:::
 :::
 
 ::::
 
+:::
+
 [project management: issues, projects, READMEs]{style="font-weight:bold; color:yellow;"}
 
-[miscellaneous: data, best practices]{style="font-weight:bold; color:grey;"}
+::: {style="opacity:0.3;"}
 
+[miscellaneous: data, best practices]{style="font-weight:bold; color:yellow;"}
+
+:::
+:::
 :::
 
 
 ## {#agenda-best_practices data-menu-title="agenda-best_practices"}
 
-::: smaller_text
 AGENDA
-:::
 
 ::: very_small_text
 
-[workflows]{style="font-weight:bold; color:grey;"}
+::: {style="opacity:0.3;"}
 
-::: grey
+[workflows]{style="font-weight:bold; color:yellow;"}
+
 - <u>Describe</u> various coding workflows
 - <u>Paraphrase</u> how version control workflows facilitate collaboration on code products
-:::
 
-[Git & GitHub]{style="font-weight:bold; color:grey;"}
+
+[Git & GitHub]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the difference between Git and GitHub
 - <u>Navigate</u> GitHub via a web browser
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Use</u> GitHub to create a new repository
 - <u>Edit</u> a new repository through GitHub's interface
 :::
-:::
 
 ::::
 
-[RStudio (local <--> cloud)]{style="font-weight:bold; color:grey;"}
+[RStudio (local <--> cloud)]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the computer-to-GitHub order of operations
 - <u>Define</u> fundamental Git vocabulary
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Create</u> a local version-controlled repository that is connected to GitHub
-:::
 :::
 
 ::::
 
-[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:grey;"}
+
+[advanced topics: conflicts, branches, forks]{style="font-weight:bold; color:yellow;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
-::: grey
 - <u>Describe</u> the causes of merge conflicts
 - <u>Explain</u> how to avoid merge conflicts
 :::
-:::
 
 ::: {.column width="50%"}
-::: grey
 - <u>Summarise</u> what to do if a merge conflict occurs
-:::
 :::
 
 ::::
 
-[project management: issues, projects, READMEs]{style="font-weight:bold; color:grey;"}
+
+[project management: issues, projects, READMEs]{style="font-weight:bold; color:yellow;"}
+
+:::
 
 [miscellaneous: data, best practices]{style="font-weight:bold; color:yellow;"}
 
 :::
 
 
-## BPs: the data {.smaller}
+## BPs: the data {.center}
 
-::: {.r-stack}
 ![](images/workflow-no-server.png){width=80% fig-align="center"}
-:::
 
 
-## BPs: file types {.smaller}
+## BPs: file types
 
 
-## BPs: commit messages {.smaller}
+## BPs: commit messages[^2]
 
 ::: {.r-stack}
 ![](images/commit_message_prefixes.png){width=100% fig-align="center"}
 :::
+
+[feat: change reference from child development lab to child study lab]{style="font-style:italic; font-size: 0.8em; color:yellow; text-align:center;"}
+
+[^2]: [www.conventionalcommits.org](https://www.conventionalcommits.org/en/v1.0.0/)
